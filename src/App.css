@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0px;
+  background-color: #f6f6f6;
+  overflow: auto
+}
+
+#root {
+  height: 100vh;
+  min-height: 800px;
+  width: 100vw;
+  margin: 0px;
+
+  max-width: 100vw; /* 限制最大宽度 */
+  overflow-x: hidden;
+}
+
+.box1 {
+  width: 100vw;
+  margin: 0px;
+
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 40px;
+}
+
+.clickBox {
+  position: absolute; /* 让 a 不影响 b 内部布局 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: -1
+}
+
+.tilted-card-demo-text {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #3d405b;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 10px;
+  padding: 10px;
+  width: 130px;
+  margin: 5px;
+}
+
+.GeneralTitle {
+  display: flex;
+  align-items: end;
+  height: 300px;
+  color: black;
+  font-size: 3em;
+  font-weight: bolder;
+  box-sizing: border-box;
+  min-height: auto
+}
+
+.TEST {
+  height: 1000px;
+  background-color: #3d405b;
+  width: 100%;
+}
