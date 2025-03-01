@@ -1,0 +1,282 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+
+  height: 1000px;
+  width: 900px;
+}
+
+.main-card-box{
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+
+.sub-card-box {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.card {
+  padding: 12px;
+  width: 50px;
+  height: 100px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  /* align-items: center; */
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.4s ease;
+  gap: 5px;
+}
+
+.card-text {
+  font-size: 0.7em;
+}
+
+.card-text-content {
+  margin-top: 10px;
+  font-size: 0.6em;
+  font-weight: lighter;
+  color: #515050;
+}
+
+/* 主卡片 A 和 F */
+/* --------------- */
+/* .main-card {
+  position: relative;
+  width: 150px;
+  height: 204px;
+  background: #f3f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  writing-mode: vertical-lr;
+} */
+
+/* .main-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: 0px;
+  top: -5px;
+  margin: auto;
+  width: 160px;
+  height: 214px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #b6d2d8 0%, #efc2a4 100% );
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.main-card::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #b6d2d8 0%, #efc2a4 100% );
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+.heading {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: white
+}
+
+.main-card p:not(.heading) {
+  font-size: 14px;
+}
+
+.main-card p:last-child {
+  color: #3f3e3f;
+  font-weight: 600;
+}
+
+.main-card:hover::after {
+  filter: blur(30px);
+}
+
+.main-card:hover::before {
+  transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+} */
+/* --------------- */
+.main-card {
+  box-sizing: border-box;
+  width: 150px;
+  height: 204px;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 6px 9px 25px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+  flex-direction: column;
+}
+
+.main-card:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+.main-card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+
+/* ABCDE 具体卡片样式（可以单独修改） */
+.card-b {
+  height: 130px;
+  width: 200px;
+}
+
+.card-c {
+  height: 130px;
+  width: 420px;
+}
+
+.card-d {
+  height: 130px;
+  width: 200px;
+}
+
+.card-e {
+  height: 130px;
+  width: 200px;
+}
+
+/* FGHIJ 具体卡片样式（可以单独修改） */
+.card-f {
+  height: 130px;
+  width: 200px;
+}
+
+.card-g {
+  height: 130px;
+  width: 200px;
+}
+
+.card-h {
+  height: 130px;
+  width: 200px;
+}
+
+.card-i {
+  height: 130px;
+  width: 200px;
+}
+
+.card-j {
+  height: 130px;
+  width: 200px;
+}
+
+/* WXYZ 具体卡片样式（可以单独修改） */
+.card-w {
+  height: 130px;
+  width: 200px;
+}
+
+.card-x {
+  height: 130px;
+  width: 200px;
+}
+
+.card-y {
+  height: 130px;
+  width: 200px;
+}
+
+.card-z {
+  height: 130px;
+  width: 200px;
+}
+
+/* ABCDE 进入动画 */
+.hover-1 {
+  animation: fadeIn 0.5s ease-in-out forwards;
+  animation-delay: 0.1s;
+}
+
+.hover-2 {
+  animation: fadeIn 0.6s ease-in-out forwards;
+  animation-delay: 0.2s;
+}
+
+.hover-3 {
+  animation: fadeIn 0.7s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+.hover-4 {
+  animation: fadeIn 0.8s ease-in-out forwards;
+  animation-delay: 0.4s;
+}
+
+
+
+@keyframes fadeIn {
+  from {
+    background: whitesmoke;
+  }
+  to {
+    background: #ff8989;
+  }
+}
+
+/* ABCDE 反向动画 */
+.reverse-1 {
+  animation: fadeOut 0.5s ease-in-out forwards;
+  animation-delay: 0.4s;
+}
+
+.reverse-2 {
+  animation: fadeOut 0.6s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+.reverse-3 {
+  animation: fadeOut 0.7s ease-in-out forwards;
+  animation-delay: 0.2s;
+}
+
+.reverse-4 {
+  animation: fadeOut 0.8s ease-in-out forwards;
+  animation-delay: 0.1s;
+}
+
+
+@keyframes fadeOut {
+  from {
+    background: #ff8989;
+
+  }
+  to {
+    background: whitesmoke;
+
+  }
+}
+
+
